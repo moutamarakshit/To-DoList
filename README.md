@@ -55,9 +55,6 @@ This is a simple To-Do List application that allows users to add tasks, mark the
 - **ToDoListService.java**: Service to manage the list of tasks.
 - **index.html**: Thymeleaf template for the frontend.
 
-## Screenshots
-
-
 ## Contributing
 
 Feel free to fork the repository and submit pull requests. For major changes, please open an issue first to discuss what you would like to change.
