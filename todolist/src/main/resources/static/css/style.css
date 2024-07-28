@@ -1,0 +1,67 @@
+body {
+    background-image: url('/images/Focus.jpeg');
+    background-size: cover; /* Ensure the background covers the entire viewport */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: rgba(90, 83, 83, 0.6); /* Make the background transparent black */
+    color: white; /* Set the font color to white */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(114, 110, 110, 0.1);
+    text-align: center;
+    width: 80%; /* Adjust the width as needed */
+    max-width: 500px; /* Set a max width */
+    position: absolute;
+    top: 50px; /* Adjust the top position as needed */
+}
+
+h1 {
+    color: white; /* Ensure the header text is also white */
+}
+
+button {
+    background-color: #007bff; /* Adjust button color if needed */
+    color: white; /* Set button font color to white */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darken the button color on hover */
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+li:nth-child(odd) {
+    background-color: #f1f1f1;
+}
+
+li span {
+    cursor: pointer;
+    color: #dc3545;
+}

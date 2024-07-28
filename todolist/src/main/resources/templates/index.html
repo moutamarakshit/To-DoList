@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        .container {
+            background-color: rgba(0, 0, 0, 0.5); /* Transparent black */
+            color: white; /* White font color */
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .completed {
+            text-decoration: line-through;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do List</h1>
+        <form action="/addTask" method="post">
+            <input type="text" name="description" placeholder="Enter your task" required>
+            <button type="submit">Add Task</button>
+        </form>
+        <ul>
+            <th:block th:each="task : ${tasks}">
+                <li th:classappend="${task.completed} ? 'completed' : ''">
+                    <span th:text="${task.description}"></span>
+                    <form action="/markTaskAsCompleted" method="post" style="display:inline;">
+                        <input type="hidden" name="description" th:value="${task.description}">
+                        <button type="submit" th:text="${task.completed} ? 'Completed' : 'Complete'"></button>
+                    </form>
+                </li>
+            </th:block>
+        </ul>
+    </div>
+</body>
+</html>
