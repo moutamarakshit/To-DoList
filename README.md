@@ -21,8 +21,8 @@ This is a simple To-Do List application that allows users to add tasks, mark the
 
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/yourusername/todo-list.git
-    cd todo-list
+    git clone https://github.com/moutamarakshit/to-dolist.git
+    cd to-dolist
     ```
 
 2. **Build the project:**
